@@ -8,8 +8,10 @@
   src: url(/typeface/roboto/Roboto-Regular.ttf) format(truetype);
 }
 
+/* style for top navigation menu */
+/* source: https://www.w3schools.com/Css/css_navbar.asp */
 .top-nav {
-  background-color: rgba(141, 138, 138, 0.555);
+  background-color: #8d8a8a8e;
   overflow: hidden;
 }
 nav ul {
@@ -26,33 +28,36 @@ nav ul {
   font-size: 17px;
   font-family: Helvetica, Arial, sans-serif;
 }
-
-/* Change the color of links on hover */
+/* Change the colour of links on hover */
 .top-nav a:hover {
   background-color: #575757;
   color: white;
 }
 
-/* Add a color to the active/current link */
+/* Add a colour to the active/current link */
 .top-nav a.active {
   background-color: #7e1515;
-  color: #c9c9c9;
+  color: #dddddd;
 }
+/* end of navigation menu */
 
-h1 {
-  text-align: center;
-}
 
-hr {
-  color: #921a1a;
-}
 
+
+/* background and text colour */
 body {
   background-color: #f7f3ee;
   color: #141414;
 }
 
+/* coloured hr */
+hr {
+  color: #921a1a;
+}
+
+/* header and paragraph styling */
 h1 {
+  text-align: center;
   padding: 5px;
   font-size: 40px;
   font-family: roboto-slab-light;
@@ -69,20 +74,4 @@ p {
   padding: 15px;
   font-size: 15px;
   font-family: roboto-regular;
-}
-
-/* dropdown menu style */
-details {
-  font-family: roboto-regular;
-  padding-left: 15px;
-  font-size: 20px;
-}
-
-details p {
-  font-family: roboto-regular;
-  font-size: 15px;
-  width: 45%;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
 }
