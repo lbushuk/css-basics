@@ -11,7 +11,7 @@
 /* style for top navigation menu */
 /* source: https://www.w3schools.com/Css/css_navbar.asp */
 .top-nav {
-  background-color: #8d8a8a8e;
+  background-color: #d8d3cd;
   overflow: hidden;
 }
 nav ul {
@@ -30,8 +30,8 @@ nav ul {
 }
 /* Change the colour of links on hover */
 .top-nav a:hover {
-  background-color: #575757;
-  color: white;
+  background-color: #979692;
+  color: #050505;
 }
 
 /* Add a colour to the active/current link */
@@ -40,9 +40,6 @@ nav ul {
   color: #dddddd;
 }
 /* end of navigation menu */
-
-
-
 
 /* background and text colour */
 body {
