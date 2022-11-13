@@ -14,44 +14,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheet/main.css" />
     <title>Treaty 6</title>
+    <!-- internal stylesheet for page-specific elements -->
+    <style>
+      /* may want to style images differently on other pages */
+      img {
+        float: right;
+        margin: 20px;
+        border: 2px solid #686868;
+      }
+
+      /* mandatory use of span to bold text*/
+      .text-emphasis {
+        font-weight: bolder;
+      }
+
+      /* mandatory use of div to style a table */
+      #table {
+        color: #141414;
+        font-family: roboto-regular;
+        margin-bottom: 50px;
+      }
+
+      /* additional table styling */
+      table,
+      th {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 6px;
+        border: 1px solid #414141;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding-right: 25px;
+        border: 1px solid #414141;
+      }
+    </style>
   </head>
 
-  <style>
-    /* may want to style images differently on other pages */
-    img {
-      float: right;
-      margin: 20px;
-      border: 2px solid #686868;
-    }
-
-    /* mandatory use of span to bold text*/
-    .text-emphasis {
-      font-weight: bolder;
-    }
-
-    /* mandatory use of div to style a table */
-    #table {
-      color: #141414;
-      font-family: roboto-regular;
-      margin-bottom: 50px;
-    }
-
-    /* additional table styling */
-    table,
-    th {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 6px;
-      border: 1px solid #414141;
-      border-collapse: collapse;
-    }
-    td {
-      padding-right: 25px;
-      border: 1px solid #414141;
-    }
-  </style>
-
   <body>
+    <!-- navigation menu -->
     <nav class="top-nav">
       <ul>
         <li><a class="active" href="index.html">Home</a></li>
@@ -61,17 +63,20 @@
     </nav>
 
     <header>
+      <!-- page header -->
       <h1>Treaty 6</h1>
       <hr />
     </header>
 
     <main>
+      <!-- an image of Canada showing the locations of all 11 treaties, more maps will be included on other pages -->
       <img
         src="/media/canada-treaty-map.svg.png"
         alt="A map of Canada showing the borders of the eleven numbered treaties. 
           Treaty six is shown in the center-left of the country, in provinces Saskatchewan 
           and Alberta"
         width="50%" />
+      <!-- various paragraphs and headings in sections, more information will be included on other pages -->
       <section>
         <h2>What is a Treaty?</h2>
         <p>
@@ -79,7 +84,9 @@
           about treaties is that they are binding; treaties last forever.
         </p>
       </section>
+      <!-- sections are separated by horizontal rules -->
       <hr />
+      <!-- paragraph includes use of the span tag to emphasize text -->
       <section>
         <h2>What is Treaty 6?</h2>
         <p>
@@ -99,7 +106,7 @@
           and medicial supplies.
         </p>
 
-        <!-- this table will be moved to another page -->
+        <!-- A table containing information about the terms of the treaty, this table will be moved to another page -->
         <div id="table">
           <table>
             <tr>
@@ -122,7 +129,7 @@
                   <li>11.5 km<sup>2</sup> of land per family of five</li>
                   <li>$12 per person</li>
                   <li>$5 additional per person, per year</li>
-                  <li>$25 yearly salary for the cheifs</li>
+                  <li>$25 yearly salary for cheifs</li>
                   <li>One horse, one harness, and one wagon or two carts</li>
                   <li>Various agricultural and hunting tools</li>
                   <li>A medicine chest</li>
@@ -143,11 +150,14 @@
   </body>
 </html>
 
-<!-- sources:
+<!--
+sources:
+
 https://www.travelmanitoba.com/places/treaty-areas/
 https://en.wikipedia.org/wiki/Treaty_6
 http://www.otc.ca/public/uploads/setting_photo/treaty_map.jpg
 https://www.saskatoon.ca/community-culture-heritage/cultural-diversity/indigenous-initiatives/treaty-6-metis-homeland
 https://www.thecanadianencyclopedia.ca/en/article/treaty-6
 https://www.liquisearch.com/treaty_6/terms
+
 -->

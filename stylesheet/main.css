@@ -1,11 +1,11 @@
 /* importing typefaces */
 @font-face {
   font-family: roboto-slab-light;
-  src: url(/typeface/roboto-slab/RobotoSlab-Regular.ttf) format(truetype);
+  src: url(/typeface/roboto-slab/roboto-slab-regular.ttf) format(truetype);
 }
 @font-face {
   font-family: roboto-regular;
-  src: url(/typeface/roboto/Roboto-Regular.ttf) format(truetype);
+  src: url(/typeface/roboto/roboto-regular.ttf) format(truetype);
 }
 
 /* style for top navigation menu */
@@ -33,13 +33,13 @@ nav ul {
   background-color: #979692;
   color: #050505;
 }
-
 /* Add a colour to the active/current link */
 .top-nav a.active {
   background-color: #7e1515;
   color: #dddddd;
 }
 /* end of navigation menu */
+
 
 /* background and text colour */
 body {
@@ -62,7 +62,6 @@ h1 {
 
 h2 {
   padding: 5px;
-
   font-size: 20px;
   font-family: roboto-slab-light;
 }
