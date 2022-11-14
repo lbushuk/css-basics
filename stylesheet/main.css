@@ -10,7 +10,7 @@
 
 /* style for top navigation menu */
 /* source: https://www.w3schools.com/Css/css_navbar.asp */
-.top-nav {
+#top-nav {
   background-color: #d8d3cd;
   overflow: hidden;
 }
@@ -19,7 +19,7 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-.top-nav a {
+#top-nav a {
   float: left;
   color: #1d1d1d;
   text-align: left;
@@ -29,12 +29,12 @@ nav ul {
   font-family: Helvetica, Arial, sans-serif;
 }
 /* Change the colour of links on hover */
-.top-nav a:hover {
+#top-nav a:hover {
   background-color: #979692;
   color: #050505;
 }
 /* Add a colour to the active/current link */
-.top-nav a.active {
+#top-nav a#active {
   background-color: #7e1515;
   color: #dddddd;
 }
