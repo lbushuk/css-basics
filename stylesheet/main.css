@@ -62,19 +62,20 @@ h1 {
   text-align: center;
   padding: 5px;
   font-size: 4rem;
-  font-family: roboto-slab-light;
+  font-family: roboto-slab-light, serif;
 }
 
 h2 {
   padding: 5px;
   font-size: 2rem;
-  font-family: roboto-slab-light;
+  font-family: roboto-slab-light, serif;
 }
 
 p {
   padding: 15px;
-  font-size: 1.5rem;
-  font-family: roboto-regular;
+  font-size: 1.6rem;
+  font-family: roboto-regular, sans-serif;
+  line-height: 140%;
 }
 
 /* style the right image class */
