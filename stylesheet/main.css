@@ -7,52 +7,69 @@
   line-height: 140%;
 }
 
-/* importing two typefaces from truetype files */
+/* 
+  importing two typefaces from truetype files 
+  source: https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/
+
+  font-family specifies the name of the imported typeface
+  src: url( ) specifies the path of the .ttf file
+*/
 @font-face {
-  /* the name of the imported font family */
   font-family: roboto-slab-light;
-  /* the file path and format for the .ttf file */
-  src: url(/typeface/roboto-slab/roboto-slab-regular.ttf) format(truetype);
+  src: url(/typeface/roboto-slab/roboto-slab-regular.ttf);
 }
 @font-face {
   font-family: roboto-regular;
-  src: url(/typeface/roboto/roboto-regular.ttf) format(truetype);
+  src: url(/typeface/roboto/roboto-regular.ttf);
 }
 
+/* 
+  max-width; sets the maximum width of content on the website (fixed width layout) 
+  margin: auto; centers all content by splitting white space equally between right and left
+  font-size 62.5%; "sets the font size of the root element to 62.5% of the default font size for the browser" - Mr. Hardman
+*/
 html {
-  /* set the maximum width of content on the website (fixed width layout) */
   max-width: 960px;
-  /* 
-    center all content by splitting white 
-    space equally between the left and right margins
-  */
   margin: auto;
-  /* 
-    style the root element to have a default font-size 
-    of 62.5% of the default font size for the browser 
-  */
   font-size: 62.5%;
 }
 
-/* style for top navigation menu */
-/* source: https://www.w3schools.com/Css/css_navbar.asp */
+/* 
+  style for top navigation menu
+  source: https://www.w3schools.com/Css/css_navbar.asp 
+  background-color: ; sets the background colour for the nav bar
+  overflow: hidden; "prevents navigation bar from collapsing when it has floated children." - Stackoverflow user hungerstar
+  https://stackoverflow.com/questions/43007817/why-do-i-have-to-add-overflowhidden-to-make-the-navigation-bar-visible-on-the
+*/
 #top-nav {
   background-color: #e2d9cc;
   overflow: hidden;
 }
+/* 
+  list-style-type: none; makes it so it displays no bullet points 
+  margin: 0; padding: 0; sets margin and padding to 0 for no extra spacing
+*/
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
+/* 
+  float: left; floats nav links left
+  color: #1d1d1d; sets the font color to a near black 
+  padding: 16px; adds padding around the text to increase the button size
+  text-decoration: none; removes the underline on links
+  font-size: 1.7rem; set font size to 1.7 times the default font size, or 17px
+  font-family: roboto-regular, sans serif; set typeface to roboto-regular with sans serif as a fallback
+*/
 #top-nav a {
   float: left;
   color: #1d1d1d;
-  text-align: left;
   padding: 16px;
   text-decoration: none;
   font-size: 1.7rem;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: roboto-regular, sans-serif;
 }
 /* Change the colour of links on hover */
 #top-nav a:hover,
@@ -120,4 +137,8 @@ figcaption {
   text-align: center;
   font-size: 1.6rem;
   font-family: roboto-regular, sans-serif;
+}
+
+footer p {
+  text-align: center;
 }
