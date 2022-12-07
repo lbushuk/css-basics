@@ -98,10 +98,12 @@ nav ul {
   This section styles all elements in the body of the website (which is everything)
   background-color: changes the background colour to an off-white for the website 
   color: changes the font colour to a neutral near-black
+  font-size: 1.6rem; sets the font size to 1.6 times the root font size, or 1.6px
 */
 body {
   background-color: #f7f3ee;
   color: #141414;
+  font-size: 1.6rem;
 }
 
 /* 
