@@ -177,3 +177,8 @@ figcaption {
 footer p {
   text-align: center;
 }
+
+#source,
+source :visited {
+  color: #525252;
+}
