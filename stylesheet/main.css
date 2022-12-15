@@ -180,6 +180,8 @@ p {
     border - sets the size, style, and colour for the border around the image. The colour is my primary colour
 */
 .center-image {
+  display: block;
+  /* add explaination****** */
   margin: 40px auto 20px auto;
   width: 80%;
   border: 2px solid #911f27;
