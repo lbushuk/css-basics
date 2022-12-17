@@ -183,7 +183,7 @@ p {
   display: block;
   /* add explaination****** */
   margin: 40px auto 20px auto;
-  width: 80%;
+  width: 70%;
   border: 2px solid #911f27;
 }
 
@@ -200,10 +200,11 @@ figcaption {
 }
 
 footer p {
+  margin-top: 20px;
   text-align: center;
 }
 
-#source,
-source :visited {
+.source,
+.source :visited {
   color: #525252;
 }
