@@ -1,10 +1,54 @@
 /* 
+  Explainations:
+    Colour: 
+      My primary colour is a dark maroon. It is used for <h1> headings, as well as borders and horizontal rules.
+      My secondary colour is a lighter maroon-ish colour. It is used for the active page on my nav bar.
+      This is a monochromatic colour scheme.
+    Colour psychology:
+      The article given did not contain maroon, so I used this website instead: https://www.colorpsychology.org/maroon/
+      I used maroon (dark red-brownish) because it represents feelings of warmth, strength, and courage. It is also a colour often used by 
+      indiginous peoples for traditional clothing and art. It is also a part of the medicine wheel. These connections with 
+      indiginous people, as well as the colour psychology of warmth, strength, and courage, is why I picked it.
+    Typography: 
+      I used a combination of serif and sans-serif fonts. A modern serif font is used for headings and a sans-serif font is
+      used for paragraphs and other text. This provides a clear visual hierarchy. It also combines the trustworthy and reliable
+      look of the serif font, with the youthful and accessible appearence of a sans-serif font.
+    Other notes:
+      The map on the first page may look like colour is the only way used to represent information, but the borders of the treaties
+      clear, even without any colour.
+*/
+
+
+/* 
   "This will style all elements to have line-height
   of 140% of the font size of the element"
   - Mr. Hardman
 */
 * {
   line-height: 140%;
+}
+
+/* 
+  max-width; sets the maximum width of content on the website (fixed width layout) 
+  margin: auto; centers all content by splitting space equally between right and left sides
+  font-size 62.5%; "sets the font size of the root element to 62.5% of the default font size for the browser" - Mr. Hardman
+*/
+html {
+  max-width: 960px;
+  margin: auto;
+  font-size: 62.5%;
+}
+
+/*
+  This section styles all elements in the body of the website (everything)
+    background-color: changes the background colour to an off-white for the website 
+    color: changes the font colour to a neutral near-black
+    font-size: 1.6rem; sets the font size to 1.6 times the root font size, or 1.6px
+*/
+body {
+  background-color: #f7f3ee;
+  color: #141414;
+  font-size: 1.6rem;
 }
 
 /* 
@@ -24,17 +68,6 @@
 }
 
 /* 
-  max-width; sets the maximum width of content on the website (fixed width layout) 
-  margin: auto; centers all content by splitting space equally between right and left sides
-  font-size 62.5%; "sets the font size of the root element to 62.5% of the default font size for the browser" - Mr. Hardman
-*/
-html {
-  max-width: 960px;
-  margin: auto;
-  font-size: 62.5%;
-}
-
-/* 
   style for top navigation menu
     source: https://www.w3schools.com/Css/css_navbar.asp 
     background-color: ; sets the background colour for the nav bar
@@ -48,8 +81,8 @@ html {
 /* 
   list-style-type: none; makes it so it displays no bullet points 
   margin: 0; padding: 0; sets margin and padding to 0 for no extra spacing
-  margin is spacing on the outside of the element
-  padding is spacing on the inside of the element, before the border
+    margin is spacing on the outside of the element's border
+    padding is spacing between the border and the content itself
 */
 nav ul {
   list-style-type: none;
@@ -80,34 +113,22 @@ nav ul {
 */
 #top-nav a:hover,
 #top-nav a:focus {
-  background-color: #7e7e7e5d;
+  background-color: #bdbdbd;
 }
 /* 
   Add a colour to the active/current link
-    background-color: changes the colour of the nav link with the #active ID. This changes the colour on for the current webpage
+    background-color: changes the colour of the nav link with the #active ID. This changes the colour of the nav link for the current page
     color: changes the text color to be more readable with the new background colour
 */
 #top-nav a#active {
-  background-color: #911f27;
-  color: #dddddd;
+  background-color: #970000;
+  color: #fafafa;
 }
 /* end of navigation menu */
 
-/*
-  This section styles all elements in the body of the website (which is everything)
-    background-color: changes the background colour to an off-white for the website 
-    color: changes the font colour to a neutral near-black
-    font-size: 1.6rem; sets the font size to 1.6 times the root font size, or 1.6px
-*/
-body {
-  background-color: #f7f3ee;
-  color: #141414;
-  font-size: 1.6rem;
-}
-
 /* 
   This section styles the page headers
-    color: changes font colour to my secondary colour, dark red
+    color: changes font colour to my primary colour, dark maroon
     text-align: center; centers the heading
     margin: 30px; adds a margin around the heading of 30px
     font-size: 4rem; sets the font size to 4x the root font size, or 40px
@@ -116,12 +137,13 @@ body {
       with the default serif font as a fallback
 */
 h1 {
-  color: #53090e;
+  color: #500000;
   text-align: center;
   margin: 30px;
   font-size: 4rem;
   font-family: roboto-slab-light, serif;
 }
+
 /* 
   This section styles the section headers (<h2>)
     margin: 30px 20px 10px 20px; sets the margin to 30px, 20px, or 10px, depending on the side of the element
@@ -138,11 +160,11 @@ h2 {
 
 /*
   Styles all horizontal rules present on my webpage
-    color: #911f27; sets the colour of the <hr> to my primary colour, red
+    color: #911f27; sets the colour of the <hr> to my secondary colour, light maroon
     margin: 5px; adds 5px of margin around the <hr>
 */
 hr {
-  color: #911f27;
+  color: #970000;
   margin: 5px;
 }
 
@@ -164,27 +186,27 @@ p {
 
     float: right - floats (or moves) an image to the right
     margin - sets the margin around the image, starts at the top and goes clockwise
-    border - sets the size, style, and colour for the border around the image. The colour is my primary colour
+    border - sets the size, style, and colour for the border around the image. The colour is my secondary colour
 */
 .right-image {
   float: right;
   margin: 10px 20px 10px 20px;
-  border: 2px solid #911f27;
+  border: 2px solid #970000;
 }
 
 /* 
   Styles the center-image class. This is used to place an image in the center of a page
+    display: block; - sets the image to be a block element enstead of an inline element.
     margin - sets the margin around the image, starts at the top and goes clockwise. 
     auto gives equal margin on left and right sides, meaning that the image is centered.
     width: 80% - sets the width of the image to be 80% of the total page width
-    border - sets the size, style, and colour for the border around the image. The colour is my primary colour
+    border - sets the size, style, and colour for the border around the image. The colour is my secondary colour
 */
 .center-image {
   display: block;
-  /* add explaination****** */
   margin: 40px auto 20px auto;
   width: 70%;
-  border: 2px solid #911f27;
+  border: 2px solid #970000;
 }
 
 /* 
@@ -198,6 +220,7 @@ figcaption {
   font-size: 1.6rem;
   font-family: roboto-regular, sans-serif;
 }
+
 /* 
   Styles all paragraphs located in the footer
     margin-top: 20px; - Adds margin between the paragraph and the <hr> that comes above it
@@ -207,6 +230,7 @@ footer p {
   margin-top: 20px;
   text-align: center;
 }
+
 /* 
   Styles content with the class of source. This is used on the "Terms" page with anchors.
   It will style both links that have been visited, and those which have not.
