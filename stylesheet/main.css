@@ -25,7 +25,7 @@
 
 /* 
   max-width; sets the maximum width of content on the website (fixed width layout) 
-  margin: auto; centers all content by splitting white space equally between right and left
+  margin: auto; centers all content by splitting space equally between right and left sides
   font-size 62.5%; "sets the font size of the root element to 62.5% of the default font size for the browser" - Mr. Hardman
 */
 html {
