@@ -198,12 +198,20 @@ figcaption {
   font-size: 1.6rem;
   font-family: roboto-regular, sans-serif;
 }
-
+/* 
+  Styles all paragraphs located in the footer
+    margin-top: 20px; - Adds margin between the paragraph and the <hr> that comes above it
+    text-align: center; aligns the text to the center of the page 
+*/
 footer p {
   margin-top: 20px;
   text-align: center;
 }
-
+/* 
+  Styles content with the class of source. This is used on the "Terms" page with anchors.
+  It will style both links that have been visited, and those which have not.
+    color: #525252; - sets the text colour of the links to be grey.
+*/
 .source,
 .source :visited {
   color: #525252;

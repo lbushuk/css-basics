@@ -16,25 +16,42 @@
     <title>Treaty 6</title>
     <!-- internal stylesheet for page-specific elements -->
     <style>
-      /* mandatory use of span to emphasize text*/
+      /* 
+        Mandatory use of span to emphasize text
+          font-weight: bold; - sets the text within spans with the class of text-emphasis to be bold
+      */
       .text-emphasis {
-        font-weight: bolder;
+        font-weight: bold;
       }
-      /* mandatory use of div to style a table */
+      /* 
+        mandatory use of div to style a table 
+          color: - set all text within the table to be black
+          font-family: - sets the default font to roboto-regular, with the default sans-serif font as a fallback
+          margin-bottom: - sets the margin at the bottom of the table for some more spacing
+      */
       #table {
         color: #141414;
-        font-family: roboto-regular;
+        font-family: roboto-regular, sans-serif;
         margin-bottom: 50px;
       }
-      /* additional table styling */
+      /* 
+        additional table styling 
+          margin-left: auto; - sets equal spacing on all sides of the table, which centers it
+          border: 1px solid #414141; - sets the parameters for the outline of the table. 1px of width, solid style, and a near black colour.
+          border-collapse: collapse; - collapses the borders into a single border
+      */
       table,
       th {
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         padding: 6px;
         border: 1px solid #414141;
         border-collapse: collapse;
       }
+      /* 
+        styling for the content within the table
+          padding-right: 25px; - adds extra spacing on the right side of the content
+          border: 1px solid #414141; - adds a border in between the two cells of the table. parameters are the same as previous border
+      */
       td {
         padding-right: 25px;
         border: 1px solid #414141;
