@@ -43,7 +43,7 @@ html {
   This section styles all elements in the body of the website (everything)
     background-color: changes the background colour to an off-white for the website 
     color: changes the font colour to a neutral near-black
-    font-size: 1.6rem; sets the font size to 1.6 times the root font size, or 1.6px
+    font-size: 1.6rem; sets the font size to 1.6 times the root font size, or 16px
 */
 body {
   background-color: #f7f3ee;
@@ -53,10 +53,10 @@ body {
 
 /* 
   importing two typefaces from truetype files 
-  source: https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/
+    source: https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/
 
-  font-family specifies the name of the imported typeface
-  src: url( ) specifies the path of the .ttf file
+    font-family specifies the name of the imported typeface
+    src: url( ) specifies the path of the .ttf file
 */
 @font-face {
   font-family: roboto-slab-light;
@@ -124,7 +124,7 @@ nav ul {
   background-color: #970000;
   color: #fafafa;
 }
-/* end of navigation menu */
+/* end of navigation menu styling */
 
 /* 
   This section styles the page headers
@@ -146,8 +146,8 @@ h1 {
 
 /* 
   This section styles the section headers (<h2>)
-    margin: 30px 20px 10px 20px; sets the margin to 30px, 20px, or 10px, depending on the side of the element
-    listing multiple values will set the margin from the start, going clockwise. top: 30, right: 20, bottom: 10, etc.
+    margin: 30px 20px 10px 20px; sets the margin to 30px, 20px, or 10px, depending on the side of the element.
+      listing multiple values will set the margin from the start, going clockwise. top: 30, right: 20, bottom: 10, etc.
     font-size: 2rem; sets the font size to 2x the root font size, or 20px
     font-family: roboto-slab-light, serif;
       sets the font for the heading as my imported font, roboto-slab-light, with the default serif font as a fallback
@@ -172,7 +172,7 @@ hr {
   Styles all paragraphs on my website 
     margin: sets the margin around the paragraph. it goes through the values clockwise starting from the top
     font-size: sets the size of the paragraph font to be 1.6 times the root font size, or 16px.
-    font-family: sets the font to roboto-regular (imported font), with the default sans serif font as a fallback 
+    font-family: sets the font to roboto-regular (imported font), with the default sans-serif font as a fallback 
 */
 p {
   margin: 5px 40px 30px 40px;
@@ -184,7 +184,7 @@ p {
   Styles the right image class. **I currently only use this once, but I 
   plan to use it more in the future, so I made it a class instead of an ID**
 
-    float: right - floats (or moves) an image to the right
+    float: right - floats (or moves) an image to the right of the page
     margin - sets the margin around the image, starts at the top and goes clockwise
     border - sets the size, style, and colour for the border around the image. The colour is my secondary colour
 */
@@ -224,7 +224,7 @@ figcaption {
 /* 
   Styles all paragraphs located in the footer
     margin-top: 20px; - Adds margin between the paragraph and the <hr> that comes above it
-    text-align: center; aligns the text to the center of the page 
+    text-align: center; - aligns the text to the center of the page 
 */
 footer p {
   margin-top: 20px;
